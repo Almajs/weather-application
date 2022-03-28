@@ -1,3 +1,6 @@
 h1 {
-    color: blue;
+    text-align: center;
+    padding: 0 auto;
+    margin: auto;
+    color: #008080;
 }
