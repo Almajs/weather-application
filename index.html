@@ -14,7 +14,7 @@
 <body>
   <div class="container">
 
-    
+    <div class="weather-app">
     <h1 class="border p-3 rounded w-25">5 Day Weather</h1>
     
 
@@ -45,36 +45,36 @@
     
     
      <br/>
+     
     
-     <div class="row">
-        <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-5">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title" id="card-city">Current city</h5>
+              <h5 class="card-title" id="card-city">Dublin</h5>
               <p class="cardDay" id="card-dayTime">Day & time</p>
-              <p class="card-text"><span id="temp-value">19</span> <a href="#" id="celsius">°C</a>|<a href="#" id="fahrenheit">°F</a></p>
+              <p class="card-text"><span id="temp-value"></span> <a href="#" id="celsius">°C</a>|<a href="#" id="fahrenheit">°F</a></p>
              
             
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-5">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Humidity: </h5><span id="humidity-value"></span>
+              <h5 class="card-title">Humidity:</h5><span id="humidity-value"></span>
               <p class="card-text">Wind: <span id="wind-value"></span></p>
             </div>
           </div>
         </div>
-      </div>
-     <br/>
-     <p class="icons border p-3 mt-5 rounded-circle w-25"> 15°C <i class="fa-solid fa-sun"> </i>
+      </div> 
+
            
-     </p>
+     
     
      <br/>
-    
-     <footer class="weather">
+    <br/>
+     <footer class="weather-forecast">
         <div class="row">
             <div class="col-2">
             <div class="day">Sat</div> <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div> <div class="temp"> 15°C</div> </div>
@@ -82,16 +82,21 @@
             <div class="col-2"> <div class="day">Mon</div> <div class="icon"><i class="fa-solid fa-sun"></i></div> <div class="temp">15°C</div> </div>
             <div class="col-2"> <div class="day">Tue</div> <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div> <div class="temp">14°C</div> </div>
             <div class="col-2"> <div class="day">Wed</div> <div class="icon"><i class="fa-solid fa-sun"></i></div> <div class="temp">16°C</div> </div>
-        </div>
-    <br>
-       <small><a href="https://github.com/Almajs/weather-project" target="blank"> Open-source code,</a> by Alma Zamir </small> 
+   
+          </div>
+    <br/>
+    <br/>
+
+       <small><a href="https://github.com/Almajs/weather-project" target="blank"> Open-source code on GitHub,</a> by Alma Zamir </small> 
         
      </footer>   
 
-    <!-- <a href="" class="btn btn-primary">Click me</a> -->
+    </div>
+
 
   
 </div>
 <script src="src/app.js"></script>  
 </body>
 </html>
+

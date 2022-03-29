@@ -1,6 +1,42 @@
-h1 {
+.weather-app {
+   max-width: 75%; 
+   margin: 30px auto;
+}
+h1{
+   text-align: center;
+   padding: 0 20px;
+   margin: auto;
+   color: #663399;
+   font-size: medium;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+.cities {
     text-align: center;
     padding: 0 auto;
-    margin: auto;
-    color: #008080;
+    margin: auto;   
+     
 }
+
+.cities a:hover{
+    color: #663399;
+}
+
+.text-sr #put-city{
+    color: blue;
+}
+.text-sr #search-btn{
+    margin: 20px    auto;
+}
+.text-sr #geo-btn{
+    color: blue;
+    margin: 2px auto;
+}
+
+.weather-forecast{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
