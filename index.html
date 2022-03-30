@@ -31,37 +31,58 @@
     <br/>
     <br/>
     <form>
-      <section class="text-sr">
+      <div class="text-sr">
         <div class="row">
-            <div class="class col-6"><input type="City" id="put-city" placeholder="Enter a city">
-                <input type="submit" id="search-btn" value="Search" />  
+            <!-- <div class="class col-6"> -->
+              <div class="clearfix">
+              <div class="row">
+
+              <div class="col-9">
+              <input type="City" id="put-city" placeholder="Enter a city" class="form-control">
+            </div>
+            <div class="col-3">
+                <input type="submit" id="search-btn" value="Search" class="btn btn-primary" />  
+              </div>
+            </div>
+              <!-- </div> -->
                 <div><input type="button" id="geo-btn" value="Geolocation" /></div>
             </div>    
-           
+          
         </div>
          
-    </section>
+      </div>
     </form>
     
-    
      <br/>
-     
-    
+     <!-- <div>
+       <div class="row">
+         <div class="col-6">
+       <div class="clearfix"></div>
+       <h2 class="col-md-6">Dublin</h2>
+       <li class="col-md-6">Day & Time</li>
+       <div class="col-md-6"><img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy" class="float-left"><span>12 °C|F</span> </div>
+     <div class="float-left">
+
+     </div>
+      </div>
+    </div>
+  </div> -->
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-6">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body weather-location">
               <h5 class="card-title" id="card-city">Dublin</h5>
               <p class="cardDay" id="card-dayTime">Day & time</p>
-              <p class="card-text"><span id="temp-value"></span><a href="#" id="celsius"> °C </a>|<a href="#" id="fahrenheit"> °F </a></p>
+              <p class="icon-img"><img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Mostly Cloudy"></p>
+              <p class="card-text"><span id="temp-value"><strong> 19 </strong></span><a href="#" id="celsius"> °C </a>|<a href="#" id="fahrenheit"> °F </a></p>
              
             
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-6">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body weather-condition">
               <h5 class="card-title">Humidity:</h5><span id="humidity-value"></span>
               <p class="card-text">Wind: <span id="wind-value"></span></p>
             </div>
@@ -76,9 +97,8 @@
     <br/>
      <footer class="weather-forecast">
         <div class="row">
-            <div class="col-2">
-            <div class="day">Sat</div> <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div> <div class="temp"> 15°C</div> </div>
-            <div class="col-2"> <div class="day">Sun</div> <div class="icon"><i class="fa-solid fa-cloud-showers-heavy"></i></div> <div class="temp">12°C</div> </div>
+            <div class="col-2"> <div class="day">Sat</div> <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div> <div class="temp"> 15°C</div> </div>
+            <div class="col-2"> <div class="day">Sun</div> <div class="icon"><i class="fa-solid fa-cloud-showers-heavy"></i></div> <div class="temp">15°C</div> </div>
             <div class="col-2"> <div class="day">Mon</div> <div class="icon"><i class="fa-solid fa-sun"></i></div> <div class="temp">15°C</div> </div>
             <div class="col-2"> <div class="day">Tue</div> <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div> <div class="temp">14°C</div> </div>
             <div class="col-2"> <div class="day">Wed</div> <div class="icon"><i class="fa-solid fa-sun"></i></div> <div class="temp">16°C</div> </div>

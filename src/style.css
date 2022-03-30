@@ -28,22 +28,41 @@ h1{
 .cities a:hover{
     color: #663399;
 }
+.weather-location{
+    color:#ffc0cb;
 
-.text-sr #put-city{
-    color: blue;
 }
+
+.weather-condition{
+    color: #ffc0cb;
+}
+
+
+/* .text-sr #put-city{
+    color: blue;
+} */
+
+.icon-img {
+    display: inline-block;
+    height: 60px;
+    margin-top: unset;
+    vertical-align: top;
+    width: 60px;
+}
+/* 
 .text-sr #search-btn{
-    margin: 20px auto;
+    margin: 20px auto; */
 }
 .text-sr #geo-btn{
-    margin: 0 auto;
-    padding: 0;
+    margin-top: 20px;
+    padding-top: 20px;
     
 }
 
 .weather-forecast{
-    display: block;
-    margin: auto;
     text-align: center;
+    padding: 0 auto;
+    margin: 0 auto; 
+  
 }
 
