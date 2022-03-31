@@ -52,10 +52,10 @@ h1{
 /* 
 .text-sr #search-btn{
     margin: 20px auto; */
-}
+
 .text-sr #geo-btn{
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 10px;
+    padding-top: 0;
     
 }
 

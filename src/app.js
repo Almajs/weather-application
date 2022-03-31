@@ -68,8 +68,6 @@ let cardDay = document.querySelector("#card-dayTime");
 cardDay.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}`;
 
 
-let footer = document.querySelector("#temp");
-footer.innerHTML = Math.round(response.data.main.temp);
 
 
 
