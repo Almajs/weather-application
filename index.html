@@ -7,12 +7,12 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="src/style.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f1f23d544b.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
+
   <div class="container">
     <div class="weather-app-wrapper">   
     <div class="weather-app">
@@ -22,10 +22,10 @@
     <br/> 
     <section class="cities">
         <div class="row">
-            <div class="col-3"><a href="https://www.accuweather.com/en/al/tirana/6522/weather-forecast/6522" target="blank"> Tirana </a></div>
-            <div class="col-3"><a href="https://www.accuweather.com/en/ie/dublin/207931/weather-forecast/207931" target="blank"> Dublin </a> </div>
-            <div class="col-3"><a href="https://www.accuweather.com/en/us/new-york/10007/weather-forecast/349727" target="blank"> New York </a> </div>
-            <div class="col-3"> <a href="https://www.accuweather.com/en/il/tel-aviv/215854/weather-forecast/215854" target="blank"> Tel Aviv </a></div>
+            <div class="col-3"><a href="https://www.accuweather.com/en/al/tirana/6522/weather-forecast/6522"> Tirana </a></div>
+            <div class="col-3"><a href="https://www.accuweather.com/en/ie/dublin/207931/weather-forecast/207931"> Dublin </a> </div>
+            <div class="col-3"><a href="https://www.accuweather.com/en/us/new-york/10007/weather-forecast/349727"> New York </a> </div>
+            <div class="col-3"> <a href="https://www.accuweather.com/en/il/tel-aviv/215854/weather-forecast/215854"> Tel Aviv </a></div>
             </div>
     </section>
     
@@ -45,13 +45,8 @@
                 <input type="submit" id="search-btn" value="Search" class="btn btn-primary w-100" />  
               </div>
             </div>
-              </div>
-              <div class="row">
-                <div class="col-3">
-                <div><input type="button" id="geo-btn" value="Geolocation" class="form-control w-100"/></div>
-              </div>
-              </div>
-               
+              <!-- </div> -->
+                <div><input type="button" id="geo-btn" value="Geolocation" /></div>
             </div>    
           
         </div>
@@ -79,7 +74,7 @@
             <div class="card-body weather-location">
               <h5 class="card-title" id="card-city">Dublin</h5>
               <p class="cardDay" id="card-dayTime">Day & time</p>
-              <p class="icon-img"><img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Mostly Cloudy"></p>
+              <p class="card-description"id="description-value"> Clear <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Mostly Cloudy"></p>
               <p class="card-text"><span id="temp-value"><strong> 19 </strong></span><a href="#" id="celsius"> °C </a>|<a href="#" id="fahrenheit"> °F </a></p>
              
             
@@ -89,19 +84,16 @@
         <div class="col-6">
           <div class="card">
             <div class="card-body weather-condition">
-              <h5 class="card-title">Humidity:</h5><span id="humidity-value"></span>
-              <p class="card-text">Wind: <span id="wind-value"></span></p>
+              <h5 class="card-title">Humidity:</h5><span id="humidity-value">%</span>
+              <p class="card-text">Wind: <span id="wind-value">Km/H</span></p>
             </div>
           </div>
         </div>
       </div> 
-
-           
-     
     
      <br/>
     <br/>
-     <footer class="weather-forecast">
+     <footer class="weather-forecast" id="week-temp">
         <div class="row">
             <div class="col-2"> <div class="day">Sat</div> <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div> <div class="temp"> 15°C</div> </div>
             <div class="col-2"> <div class="day">Sun</div> <div class="icon"><i class="fa-solid fa-cloud-showers-heavy"></i></div> <div class="temp">15°C</div> </div>
@@ -121,7 +113,7 @@
     <small><a href="https://github.com/Almajs/weather-project" target="blank"> Open-source code on GitHub,</a> by Alma Zamir </small> 
   </div>
 
-  
+
 </div>
 <script src="src/app.js"></script>  
 </body>

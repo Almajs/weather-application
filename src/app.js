@@ -1,5 +1,5 @@
 let apiKey = "6c9652fb4aafdb6667f90afa73f1d29b";
-let apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric";
+let apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric";
 
 function searchCity(event){
   
@@ -9,17 +9,24 @@ function searchCity(event){
   axios.get(`${apiUrl}&q=${city.value}&appid=${apiKey}`).then(showCity);
     
 }
+
 function showCity(response){
   console.log(response.data);
   let currentCity = document.querySelector("#card-city");
-  currentCity.innerHTML = response.data.name;
   let currentTemp = document.querySelector("#temp-value");
-  currentTemp.innerHTML = Math.round(response.data.main.temp); 
   let humidity = document.querySelector("#humidity-value");
-  humidity.innerHTML = (response.data.main.humidity)+ " %" ; 
   let wind = document.querySelector("#wind-value");
-  wind.innerHTML = Math.round(response.data.wind.speed) + " km/h"; 
-}
+  currentCity.innerHTML = response.data.name;
+  currentTemp.innerHTML = Math.round(response.data.main.temp); 
+  humidity.innerHTML = (response.data.main.humidity)+ " %" ; 
+  wind.innerHTML = Math.round(response.data.wind.speed) + " km/h";
+  let descriptionElement = document.querySelector("#description-value");
+  descriptionElement.innerHTML = response.data.weather[0].main;
+ }
+  
+  // let weektempelement = document.querySelector("#week-temp");
+  // weektempelement.innerHTML = response.data.
+
 
 
 
@@ -58,18 +65,11 @@ if (minutes < 10) {
 let years = now.getFullYear();
 let month = now.getMonth();
 
-let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = days[now.getDay()];
 
 let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 month = months[now.getMonth()];
 let cardDay = document.querySelector("#card-dayTime");
 
-cardDay.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}`;
-
-
-
-
-
-
-
+cardDay.innerHTML = `${day}, ${month}, ${date}, ${hours}:${minutes}`;

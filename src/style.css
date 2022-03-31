@@ -1,3 +1,5 @@
+
+
 .weather-app-wrapper {
     max-width: 600px; 
     margin: 30px auto;
@@ -29,12 +31,16 @@ h1{
     color: #663399;
 }
 .weather-location{
-    color:#ffc0cb;
+    margin: auto;
+    padding: 10px;
+    
+    
 
 }
 
 .weather-condition{
-    color: #ffc0cb;
+    margin: auto;
+    padding: 10px;
 }
 
 
