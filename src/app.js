@@ -19,9 +19,10 @@ function showCity(response){
   currentCity.innerHTML = response.data.name;
   currentTemp.innerHTML = Math.round(response.data.main.temp); 
   humidity.innerHTML = (response.data.main.humidity)+ " %" ; 
-  wind.innerHTML = Math.round(response.data.wind.speed) + " km/h";
+  wind.innerHTML = Math.round(response.data.wind.speed) + " km/H";
   let descriptionElement = document.querySelector("#description-value");
-  descriptionElement.innerHTML = response.data.weather[0].main;
+  descriptionElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  // dateElement.innerHTML = formatDate(response.data.dt * 1000)
  }
   
   // let weektempelement = document.querySelector("#week-temp");
@@ -62,7 +63,6 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = "0" + minutes;
 }
-let years = now.getFullYear();
 let month = now.getMonth();
 
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -73,3 +73,21 @@ month = months[now.getMonth()];
 let cardDay = document.querySelector("#card-dayTime");
 
 cardDay.innerHTML = `${day}, ${month}, ${date}, ${hours}:${minutes}`;
+
+// function formatDate(timestamp){
+//   let date = new Date(timestamp);
+//   let hours = timestamp.getHours();
+//   if( hours < 10 ) {
+//     hours = `0 ${hours}`;
+//   }
+//   let minutes = date.getMinutes();
+//   if (minutes < 10) {
+//     minutes =`0 ${minutes}`;
+//   }
+
+//   let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+//   let day = days[date.getDay()];
+//   return`${day} ${hours}:00 ${minutes}`;
+
+// }
+

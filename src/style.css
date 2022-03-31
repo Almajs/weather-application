@@ -60,8 +60,9 @@ h1{
     margin: 20px auto; */
 
 .text-sr #geo-btn{
-    margin-top: 10px;
-    padding-top: 0;
+    margin-top: 20px;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
 
