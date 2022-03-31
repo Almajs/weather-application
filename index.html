@@ -19,8 +19,7 @@
     <h1>5 Day Weather</h1>
     
 
-    <br/> 
-    <section class="cities">
+    <!-- <section class="cities">
         <div class="row">
             <div class="col-3"><a href="https://www.accuweather.com/en/al/tirana/6522/weather-forecast/6522"> Tirana </a></div>
             <div class="col-3"><a href="https://www.accuweather.com/en/ie/dublin/207931/weather-forecast/207931"> Dublin </a> </div>
@@ -28,9 +27,8 @@
             <div class="col-3"> <a href="https://www.accuweather.com/en/il/tel-aviv/215854/weather-forecast/215854"> Tel Aviv </a></div>
             </div>
     </section>
-    
-    <br/>
-    <br/>
+     -->
+
     <form>
       <div class="text-sr">
         <div class="row">
@@ -39,10 +37,12 @@
               <div class="row">
 
               <div class="col-10">
+               
               <input type="City" id="put-city" placeholder="Enter a city..." class="form-control">
             </div>
             <div class="col-2">
                 <input type="submit" id="search-btn" value="Search" class="btn btn-primary w-100" />  
+              
               </div>
             </div>
               <!-- </div> -->
@@ -71,21 +71,22 @@
       <div class="row">
         <div class="col-6">
           <div class="card">
-            <div class="card-body weather-location">
-              <h5 class="card-title" id="card-city">Dublin</h5>
+            <div class="card-body clearfix weather-location">
+              <h5 class="card-title" id="card-city"> Dublin </h5>
               <p class="cardDay" id="card-dayTime">Day & time</p>
-              <p class="card-description"> Clear <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Mostly Cloudy" id="description-value"></p>
-              <p class="card-text"><span id="temp-value"><strong> 19 </strong></span><a href="#" id="celsius"> °C </a>|<a href="#" id="fahrenheit"> °F </a></p>
+              <p class="card-description"><img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy" id="description-value"></p>
              
-            
+             <p class="card-text"><span id="temp-value"></span><a href="#" id="celsius-link">°C</a>|<a href="#" id="fahrenheit-link">°F</a></p>
+             
+              
             </div>
           </div>
         </div>
         <div class="col-6">
           <div class="card">
             <div class="card-body weather-condition">
-              <h5 class="card-title">Humidity:</h5><span id="humidity-value">%</span>
-              <p class="card-text">Wind: <span id="wind-value">Km/H</span></p>
+              <h5 class="card-title"> Humidity:</h5><span id="humidity-value"> % </span>
+              <p class="card-text">Wind:<span id="wind-value">Km/H</span></p>
             </div>
           </div>
         </div>
@@ -110,7 +111,7 @@
 
     </div>
 
-    <small><a href="https://github.com/Almajs/weather-project" target="blank"> Open-source code on GitHub,</a> by Alma Zamir </small> 
+    <small><a href="https://github.com/Almajs/weather-application" target="blank"> Open-source code on GitHub,</a> by Alma Zamir </small> 
   </div>
 
 

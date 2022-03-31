@@ -1,8 +1,7 @@
-
-
 .weather-app-wrapper {
     max-width: 600px; 
     margin: 30px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .weather-app {
@@ -20,44 +19,11 @@ h1{
    
 }
 
-.cities {
-    text-align: center;
-    padding: 0 auto;
-    margin: auto;   
-     
-}
-
-.cities a:hover{
-    color: #663399;
-}
-.weather-location{
-    margin: auto;
-    padding: 10px;
-    
-    
-
-}
 
 .weather-condition{
     margin: auto;
     padding: 10px;
 }
-
-
-/* .text-sr #put-city{
-    color: blue;
-} */
-
-.icon-img {
-    display: inline-block;
-    height: 60px;
-    margin-top: unset;
-    vertical-align: top;
-    width: 60px;
-}
-/* 
-.text-sr #search-btn{
-    margin: 20px auto; */
 
 .text-sr #geo-btn{
     margin-top: 20px;
