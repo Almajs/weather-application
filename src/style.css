@@ -1,41 +1,43 @@
+body {
+  background-color: #f9f7fe;
+}
+
 .weather-app-wrapper {
-    max-width: 600px; 
-    margin: 30px auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #663399;
+  background-color: antiquewhite;
+  border: 1px groove;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 600px;
+  border-radius: 20px;
 }
 
 .weather-app {
-   padding: 20px;
-   border: 1px solid #dadde1;
-   border-radius: 20px;
+  padding: 30px;
+  color: #663399;
 }
-h1{
-   text-align: center;
-   padding: 20px 20px;
-   color: #663399;
-   font-size: medium;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   opacity: 0,2;
+h1 {
+  text-align: center;
+  padding: 20px 20px;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* .weather-location{
    
 }
 
 
 .weather-condition{
-    margin: auto;
-    padding: 10px;
+   
+} */
+
+.text-sr #geo-btn {
+  margin-top: 20px;
+  padding: 5px;
 }
 
-.text-sr #geo-btn{
-    margin-top: 20px;
-    padding: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+.reference {
+  display: inline-block;
+  padding-top: 50px;
 }
-
-.weather-forecast{
-    text-align: center;
-    padding: 0 auto;
-    margin: 0 auto; 
-  
-}
-
