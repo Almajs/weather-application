@@ -1,11 +1,10 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #ffebcd;
 }
 
 .weather-app-wrapper {
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #663399;
-  background-color: antiquewhite;
+  background-color: #fffafa;
   border: 1px groove;
   max-width: 600px;
   margin: 0 auto;
@@ -20,21 +19,13 @@ body {
 h1 {
   text-align: center;
   padding: 20px 20px;
-  font-size: medium;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
 }
-/* .weather-location{
-   
-}
-
-
-.weather-condition{
-   
-} */
 
 .text-sr #geo-btn {
   margin-top: 20px;
   padding: 5px;
+  color: #663399;
 }
 
 .reference {
