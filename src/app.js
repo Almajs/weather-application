@@ -93,7 +93,7 @@ let months = [
 month = months[now.getMonth()];
 let cardDay = document.querySelector("#card-dayTime");
 
-cardDay.innerHTML = `${day}, ${month}, ${date}, ${hours}:${minutes}`;
+cardDay.innerHTML = `${day} ${hours}:${minutes}`;
 
 // function formatDate(timestamp){
 //   let date = new Date(timestamp);

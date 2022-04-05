@@ -1,34 +1,96 @@
 body {
-  background-color: #ffebcd;
+  background: linear-gradient(
+    0deg,
+    rgb(247, 247, 247) 23.8%,
+    rgb(252, 221, 221) 92%
+  );
 }
 
 .weather-app-wrapper {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: #fffafa;
   border: 1px groove;
   max-width: 600px;
   margin: 0 auto;
-  height: 600px;
   border-radius: 20px;
 }
 
 .weather-app {
-  padding: 30px;
-  color: #663399;
+  padding: 20px;
+  background-color: #fffafa;
 }
 h1 {
   text-align: center;
   padding: 20px 20px;
-  font-weight: 400;
+  font-weight: 500;
+  opacity: 0.5;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-radius: 20px;
+  border-width: thin;
+}
+#put-city {
+  background: #d5def5;
+}
+#search-btn {
+  background: #7c73e6;
+}
+#card-city {
+  font-weight: bold;
+  font-size: 40px;
+  color: #5e227f;
 }
 
-.text-sr #geo-btn {
+#description-value {
+  line-height: 1.6;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#temp-value {
+  font-size: 40px;
+  color: #5e227f;
+  font-weight: bold;
+}
+#celsius-link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  top: -12px;
+  line-height: 1;
+}
+
+#fahrenheit-link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  top: -12px;
+  line-height: 1;
+}
+
+#humidity-value {
+  color: #5e227f;
+}
+#wind-value {
+  color: #5e227f;
+}
+.weather-forecast {
   margin-top: 20px;
-  padding: 5px;
-  color: #663399;
+  text-align: center;
 }
-
+.weather-forecast-date {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.5;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
 .reference {
   display: inline-block;
-  padding-top: 50px;
+  margin: 0 auto;
+  padding-top: 10px;
 }
