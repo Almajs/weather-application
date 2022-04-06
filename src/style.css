@@ -21,9 +21,10 @@ body {
 h1 {
   text-align: center;
   padding: 20px 20px;
-  font-weight: 500;
+  font-weight: bolder;
   opacity: 0.5;
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  color: darkmagenta;
+  /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
   border-radius: 20px;
   border-width: thin;
 }

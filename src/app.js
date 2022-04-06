@@ -29,6 +29,8 @@ function showCity(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   descriptionElement.setAttribute("alt", response.data.weather[0].description);
+
+  console.log(response.data);
 }
 
 function showPosition(position) {
@@ -132,3 +134,49 @@ let celsiusTemperature = null;
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+displayForecast();
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">
+        <div class="weather-forecast-date">${day}</div>
+        <img
+          src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+          alt=""
+          width="42"
+        />
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> 18° </span>
+          <span class="weather-forecast-temperature-min"> 12° </span>
+        </div>
+      </div>
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
+//   forecastHTML =
+//     forecastHTML +
+//     `
+//   <div class="col-2">
+//   <div class="weather-forecast-date">Thu</div>
+//   <img
+//     src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+//     alt=""
+//     width="42"
+//   />
+//   <div class="weather-forecast-temperatures">
+//     <span class="weather-forecast-temperature-max"> 18° </span>
+//     <span class="weather-forecast-temperature-min"> 12° </span>
+//   </div>
+// </div>
+// `;
