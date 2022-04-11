@@ -5,28 +5,28 @@ body {
     rgb(252, 221, 221) 92%
   );
 }
-
+.App {
+  max-width: 800px;
+  margin: 60px auto;
+}
+.container {
+  max-width: 960px;
+}
 .weather-app-wrapper {
   font-family: Georgia, "Times New Roman", Times, serif;
-  border: 1px groove;
+  background-color: #ffffff;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 40px auto;
+  padding: 40px;
   border-radius: 20px;
 }
 
-.weather-app {
-  padding: 20px;
-  background-color: #fffafa;
-}
 h1 {
   text-align: center;
-  padding: 20px 20px;
+  padding: 20px;
   font-weight: bolder;
-  opacity: 0.5;
-  color: darkmagenta;
-  /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
-  border-radius: 20px;
-  border-width: thin;
+  color: #b38dc8;
+  border-radius: 30px;
 }
 #put-city {
   background: #d5def5;
@@ -36,12 +36,16 @@ h1 {
 }
 #card-city {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   color: #5e227f;
+  line-height: 24px;
+  position: relative;
+  top: -12px;
+  line-height: 1;
 }
 
 #description-value {
-  line-height: 1.6;
+  line-height: 1;
   font-style: italic;
   opacity: 0.5;
 }
@@ -53,7 +57,7 @@ h1 {
 }
 #celsius-link {
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   position: relative;
   top: -12px;
@@ -62,13 +66,23 @@ h1 {
 
 #fahrenheit-link {
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   position: relative;
   top: -12px;
   line-height: 1;
 }
-
+.weather-location {
+  padding: 5px;
+}
+.weather-condition {
+  line-height: 24px;
+  position: relative;
+  top: -1px;
+  line-height: 1;
+  margin-left: 80px;
+  font-weight: medium;
+}
 #humidity-value {
   color: #5e227f;
 }
@@ -76,7 +90,10 @@ h1 {
   color: #5e227f;
 }
 .weather-forecast {
-  margin-top: 20px;
+  display: block;
+  margin: 20px auto;
+  padding: 50px;
+  width: 100%;
   text-align: center;
 }
 .weather-forecast-date {
